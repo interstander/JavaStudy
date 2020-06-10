@@ -1,6 +1,6 @@
 package chapter01;
 
-public class ConsoleOutput2 {
+public class ConsoleOutput02 {
 
 	public static void main(String[] args) {
 		System.out.println("안녕하세요");

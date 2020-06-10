@@ -1,6 +1,6 @@
 package chapter01;
 
-public class ConsoleOutPut3 {
+public class ConsoleOutPut03 {
 
 	public static void main(String[] args) {
 		System.out.printf("%d \n",123);
