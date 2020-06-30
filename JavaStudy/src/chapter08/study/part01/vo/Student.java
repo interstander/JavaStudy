@@ -1,4 +1,4 @@
-package chapter07;
+package chapter08.study.part01.vo;
 
 public class Student {
 	String name;
@@ -6,6 +6,8 @@ public class Student {
 	int sum;
 	double avg;
 	int ranking;
+	
+	public Student() {}
 	
 	public Student(String name, int[] scores) {
 		this.name = name;
@@ -37,5 +39,4 @@ public class Student {
 		System.out.println(" 총   점  : "+sum);
 		System.out.println(" 평   균  : "+avg);
 	}
-
 }
