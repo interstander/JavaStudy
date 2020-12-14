@@ -78,13 +78,13 @@ public class HomeWork {
 		int sip = money / unit;
 
 		System.out.println("오 만원 : "+ohman+"장");
-		System.out.println("만    원 : "+man+"장");
+		System.out.println("만   원 : "+man+"장");
 		System.out.println("오 천원 : "+ohcheon+"장");
-		System.out.println("천    원 : "+cheon+"장");
+		System.out.println("천   원 : "+cheon+"장");
 		System.out.println("오 백원 : "+ohbeak+"개");
-		System.out.println("백    원 : "+beak+"개");
+		System.out.println("백   원 : "+beak+"개");
 		System.out.println("오 십원 : "+ohsip+"개");
-		System.out.println("십    원 : "+sip+"개");
+		System.out.println("십   원 : "+sip+"개");
 
 
 		System.out.println();
