@@ -6,8 +6,10 @@ import java.util.Scanner;
 public class Homework04 {
 
 	public static void main(String[] args) {
-//		4. 로또 번호를 중복되지 않게 뽑은 후 버블정렬 기법을 사용해서 오름차순으로 정렬하세요.
-		System.out.println("3. 로또 한 게임을 실행한후 버블 정렬 기법을 사용하여 오름차순 정렬하시오.");
+		//////////////////////////////////////////////////////////////////////
+		//13. 로또 번호를 중복되지 않게 뽑은 후 버블정렬 기법을 사용해서 오름차순으로 정렬하세요.
+		System.out.println("*** 문제 13 ***");
+
 		int[] arr1 = new int[6];  //배열을 담기 위한 변수 
 		Random r =new Random(); //랜덤값을 읽어오기 위한 변수
 
@@ -51,7 +53,10 @@ public class Homework04 {
 			}
 			System.out.println();
 		}
-
+		
+		
+		System.out.println();
+		
 		
 
 

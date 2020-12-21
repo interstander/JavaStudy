@@ -6,8 +6,15 @@ import java.util.Scanner;
 public class Homework05 {
 
 	public static void main(String[] args) {
-//		2. 야구 게임 : 컴퓨터가 뽑은 임의의 숫자 3개를 맞추세요  0~9까지 
-		System.out.println("13.  야구 게임 : 컴퓨터가 뽑은 임의의 숫자 3개를 맞추세요  0~9까지");
+		///////////////////////////////////////////////////////////////////////
+//		14. 야구 게임 : 컴퓨터가 뽑은 임의의 숫자(중복X) 3개를 맞추세요 
+//		0~9까지  컴퓨터가 뽑은 숫자중 
+//		한 개의 종류와 위치를 함께 맞추면 스트라이트, 
+//		한 개의 종류를 맞췄지만 위치가 잘못된 경우는 볼을 선언해서 
+//		3스트라이크가 나올때 까지 반복하세요.
+//		몇번 만에 맞췄는지 최종 기록을 출력하세요.
+		System.out.println("*** 문제 14 ***");
+
 		Random r = new Random();
 		Scanner in = new Scanner(System.in);
 
@@ -17,11 +24,11 @@ public class Homework05 {
 		int ball = 0,strike = 0;
 
 		for (int j=0;j<coms.length;j++) {
-			int b = in.nextInt(10);
+			int b = r.nextInt(10);
 			coms[j]=b;
 			for(int k=0;k<j;k++) {
 				if(coms[k]==b) {
-					b=in.nextInt(10);
+					b=r.nextInt(10);
 					k--;
 				}else {
 					coms[j]=b;
@@ -51,7 +58,10 @@ public class Homework05 {
 			cnt++;
 		}
 		System.out.println("플레이 회수 : "+cnt);
-
+		
+		
+		System.out.println();
+	
 
 	}
 
