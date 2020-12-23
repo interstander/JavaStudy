@@ -6,7 +6,7 @@ public class Homework07 {
 
 
 	public static void main(String[] args) {
-		//		7.  배열을 사용해서 학생 성적을 관리해봅시다
+		//		15.  배열을 사용해서 학생 성적을 관리해봅시다
 		//		- 학생 5명의 이름은 고길동,김길동,이길동,박길동,홍길동
 		//		- 각각 학생의 점수는 국어,영어,수학 3과목의 점수를 입력받는다.
 		//		- 학생 이름으로 개개인의 성적을 조회한다.
@@ -14,6 +14,7 @@ public class Homework07 {
 		//	(추가)각 학생의 평균 성적으로 석차를 만들어서 조회한다.
 
 		Scanner in  = new Scanner(System.in);
+		System.out.println("15번 문제");
 
 		String[] names = new String[] {"고길동","김길동","이길동","박길동","홍길동"};
 		int[][] scores = new int[5][4];

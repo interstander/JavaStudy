@@ -148,12 +148,6 @@ public class Homework02 {
 		}
 		System.out.println();
 
-
-
-
-		//		//2. 로또 한게임을 실행할 때 중복되지 않도록 출력하세요
-
-
 	}
 
 }

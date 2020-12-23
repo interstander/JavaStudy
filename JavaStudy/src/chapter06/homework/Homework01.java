@@ -6,71 +6,92 @@ public class Homework01 {
 	static Scanner in  = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-
-//	1. 은행 예금 예제를 메소드로 만들어 봅시다.
-//	예금 기능/ 출금 기능/ 조회 기능을 각각 메소드를 만들어 봅니다.
-		int balance = 0;
-		boolean run = true;
-		
-		while(run) {
-			menu();
-			int selNum = Integer.parseInt(in.nextLine());
-			
-			switch(selNum) {
-			case 1:
-				System.out.println("예금");
-				balance = deposit(balance);
-				System.out.println("입금 완료");
-				break;
-			case 2:
-				System.out.println("출금");
-				balance = withdraw(balance);
-				break;
-			case 3:
-				System.out.println("조회");
-				checkBalance(balance);
-				break;
-			case 4:
-				System.out.println("프로그램을 종료합니다.");
-				run = false;
-				break;
-			default:
-				System.out.println("잘못 입력했습니다.");
-				System.out.println("다시 확인하시고 선택하세요.");
-			}
-		}
-
-
-	}
-	private static void menu() {
-		System.out.println("코리아 은행");
-		System.out.println("1.예금");
-		System.out.println("2.출금");
-		System.out.println("3.조회");
-		System.out.println("4.종료");
+//		1. 구구단을 출력하는 메소드를 만들어 보세요.
+		System.out.println("문제 1번");
+		q1Gugudan();
+//		2. 숫자를 입력받으면 해당 숫자의 구구단을 출력하세요.
+		System.out.println("문제 2번");
+		System.out.println("구구단을 구할 숫자를 입력하세요");
 		System.out.print(">");
+		
+		int num2 = Integer.parseInt(in.nextLine());
+		q2GugudanNum(num2);
+		
+//		3. 두개의 숫자를 입력받아서 작은 수부터 큰 수 까지의 구구단을 출력하세요.​
+		System.out.println("문제 3번");
+		System.out.println("구구단 시작할 숫자를 입력하세요.");
+		System.out.print(">");
+		int minNum3 = Integer.parseInt(in.nextLine());
+		System.out.println("구구단 마지막 숫자를 입력하세요.");
+		System.out.print(">");
+		int maxNum3 = Integer.parseInt(in.nextLine());
+		
+		q3GugudanNum(minNum3,maxNum3);
+		
+//		4. 숫자가 하나만 입력되면 해당 숫자의 구구단을 출력하고 두개의 숫자가 입력되면 작은 수부터 큰수까지의 구구단을 출력하세요.
+		System.out.println("문제 4번");
+		System.out.println("구구단을 구할 숫자를 입력하세요");
+		System.out.print(">");
+		
+		int num4 = Integer.parseInt(in.nextLine());
+		q4GugudanNum(num4);
+		
+		System.out.println("구구단 시작할 숫자를 입력하세요.");
+		System.out.print(">");
+		int minNum4 = Integer.parseInt(in.nextLine());
+		System.out.println("구구단 마지막 숫자를 입력하세요.");
+		System.out.print(">");
+		int maxNum4 = Integer.parseInt(in.nextLine());
+		
+		q4GugudanNum(minNum4,maxNum4);
+		
+		
 	}
-
-	private static void checkBalance(int balance) {
-		System.out.println("잔액 : "+balance);
-	}
-
-	private static int withdraw(int balance) {
-		System.out.println("출금할 금액을 입력하세요.");
-		int money = Integer.parseInt(in.nextLine());
-		if(money > balance) {
-			System.out.println("잔액이 부족합니다.");
-		}else {
-			balance -= money;
-			System.out.println("출금 완료");
+	
+	public static void q1Gugudan() {
+		for(int i=2;i<10;i++) {
+			System.out.printf("***%d단***\n",i);
+			for(int j=1;j<10;j++) {
+				System.out.printf("%d X %d = %d \n",i,j,(i*j));
+			}
+			System.out.println();
 		}
-		return balance;
+	}
+	
+	public static void q2GugudanNum(int num) {
+		System.out.printf("***%d단***\n",num);
+		for(int j=1;j<10;j++) {
+			System.out.printf("%d X %d = %d \n",num,j,(num*j));
+		}
+		System.out.println();
+	}
+	
+	public static void q3GugudanNum(int min, int max) {
+		for(int i=min;i<=max;i++) {
+			System.out.printf("***%d단***\n",i);
+			for(int j=1;j<10;j++) {
+				System.out.printf("%d X %d = %d \n",i,j,(i*j));
+			}
+			System.out.println();
+		}
+	}
+	
+	public static void q4GugudanNum(int num) {
+		System.out.printf("***%d단***\n",num);
+		for(int j=1;j<10;j++) {
+			System.out.printf("%d X %d = %d \n",num,j,(num*j));
+		}
+		System.out.println();
+	}
+	
+	public static void q4GugudanNum(int min, int max) {
+		for(int i=min;i<=max;i++) {
+			System.out.printf("***%d단***\n",i);
+			for(int j=1;j<10;j++) {
+				System.out.printf("%d X %d = %d \n",i,j,(i*j));
+			}
+			System.out.println();
+		}
 	}
 
-	private static int deposit(int balance) {
-		System.out.println("입금할 금액을 입력하세요.");
-		int money = Integer.parseInt(in.nextLine());
-		balance += money;
-		return balance;
-}
 }

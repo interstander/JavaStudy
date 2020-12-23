@@ -5,7 +5,7 @@ import java.util.Random;
 public class Homework06 {
 
 	public static void main(String[] args) {
-		//		6. 과제.
+		//		16. 과제.
 		//		주차관리 프로그램
 		//			1. 자동차가 들어오면 1부터 100까지의 랜덤 숫자중에 하나를 부여 받는다.
 		//			2. 주차장은 0번 부터 9번까지의 주차 구역이 있다.
@@ -17,6 +17,8 @@ public class Homework06 {
 		//		****모든 주차가 완료되면… 
 		//		0번 car000 (000은 랜덤  숫자번호)
 		//		1번 car000
+		
+		System.out.println("16번 문제");
 
 		Random in = new Random();
 		String[] parkingArea = new String[10];

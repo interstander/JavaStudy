@@ -45,6 +45,7 @@ public class HomeWork01 {
 		System.out.println("항 : "+j);
 		System.out.println("합계 : "+sum);
 		System.out.println();
+		
 		//4.  100이하의 자연수중에서 2의 배수와 7의 배수를 모두 출력하고 그것들의 합과 평균을 구하세요.
 		System.out.println("4번 문제");
 		System.out.println("4.  100이하의 자연수중에서 2의 배수와 7의 배수를 모두 출력하고 그것들의 합과 평균을 구하세요.");

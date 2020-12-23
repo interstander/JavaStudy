@@ -1,13 +1,13 @@
 package chapter07.homework;
 
-public class Student {
+public class Student7 {
 	String name;
 	int[] scores;
 	int sum;
 	double avg;
 	int ranking;
 	
-	public Student(String name, int[] scores) {
+	public Student7(String name, int[] scores) {
 		this.name = name;
 		this.scores = scores;
 		this.sum = sum();
@@ -37,5 +37,4 @@ public class Student {
 		System.out.println(" 총   점  : "+sum);
 		System.out.println(" 평   균  : "+avg);
 	}
-
 }
