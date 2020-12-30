@@ -1,4 +1,4 @@
-package chapter10;
+package chapter10.test;
 
 public class C1 implements A,B{
 
